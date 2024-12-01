@@ -1,6 +1,6 @@
-# IntelliFinance
+# FinGuard
 
-IntelliFinance is a personal finance tracker built with Django. It helps you manage your expenses, set savings goals, and visualize your financial habits with easy-to-read charts and reports.
+FinGuard is a personal finance tracker built with Django. It helps you manage your expenses, set savings goals, and visualize your financial habits with easy-to-read charts and reports.
 
 ## Features
 - Add and categorize income and expenses
