@@ -1,0 +1,13 @@
+{% extends 'layouts/app.html' %}
+{% block content %}
+<div class="container mt-5 text-center">
+    <div class="card">
+        <div class="card-header bg-light">
+            <h2 class="text-dark">You have been logged out successfully!</h2>
+        </div>
+        <div class="card-body bg-white">
+            <a href="{% url 'login' %}" class="btn btn-secondary">Login Again</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

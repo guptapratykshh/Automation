@@ -1,0 +1,30 @@
+{% extends 'layouts/app.html' %}
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <h2 class="text-center text-dark">Login</h2>
+                </div>
+                <div class="card-body bg-white">
+                    <form method="POST" action="{% url 'login' %}">
+                        {% csrf_token %}
+                        <div class="form-group mb-3">
+                            <label for="username" class="text-dark">Username:</label>
+                            <input type="text" id="username" name="username" class="form-control bg-light text-dark">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="password" class="text-dark">Password:</label>
+                            <input type="password" id="password" name="password" class="form-control bg-light text-dark">
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-block w-100">Login</button>
+                    </form>
+                    <p class="text-center mt-3 text-dark">Don't have an account? <a href="{% url 'register' %}" class="text-secondary">Register here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
