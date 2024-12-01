@@ -1,0 +1,24 @@
+{% extends 'layouts/app.html' %}
+{% block content %}
+<div class="container text-center mt-5">
+    <h1>Welcome to the Finance Tracker</h1>
+    <p class="lead">Manage your expenses and track your finances easily.</p>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <h3>Track Expenses</h3>
+            <p>Easily log and categorize your daily expenses to keep your budget in check.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Set Savings Goals</h3>
+            <p>Create and monitor your savings goals to achieve financial milestones.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Generate Reports</h3>
+            <p>Get detailed reports and insights into your spending habits.</p>
+        </div>
+    </div>
+    <div class="mt-4">
+        <a href="/login/" class="btn btn-secondary btn-lg">Get Started</a>
+    </div>
+</div>
+{% endblock %}
